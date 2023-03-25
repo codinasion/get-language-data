@@ -52,9 +52,9 @@ yarn add codinasion/language
 | GO | `go` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718055-cc760c85-aab1-4c6c-9b6e-095fedfbb12f.png) |
 | Haskell | `hs` `hsc` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718051-caef203f-2584-479d-b0e2-47fb8e59b265.png) |
 | Java | `java` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718049-78c3fb05-f06b-4b70-bfe5-7dc8cae5df8f.png) |
-| JavaScript | `js` `_js` `bones` `es` `es6` `frag` `gs` `jake` `jsb` `jscad` `jsfl` `jsm` `jss` `njs` `pac` `sjs` `ssjs` `sublime-build` `sublime-commands` `sublime-completions` `sublime-keymap` `sublime-macro` `sublime-menu` `sublime-mousemap` `sublime-project` `sublime-settings` `sublime-theme` `sublime-workspace` `sublime_metrics` `sublime_session` `xsjs` `xsjslib` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718046-4a1145f9-21a8-400f-bea6-150f0d99d110.png) |
+| JavaScript | `js` `_js` `bones` `es` `es6` `frag` `gs` `jake` `jsb` `jscad` `jsfl` `jsm` `jss` `njs` `pac` `sjs` `ssjs` `sublime-build` `sublime-commands` `sublime-completions` `sublime-keymap` `sublime-macro` `sublime-menu` `sublime-mousemap` `sublime-project` `sublime-settings` `sublime-theme` `sublime-workspace` `sublime_metrics` `sublime_session` `xsjs` `xsjslib` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227724565-dd199753-04ef-4262-bb48-e01b187ab4df.png) |
 | Julia | `jl` | kebab-case | ![](https://user-images.githubusercontent.com/54644599/227718045-9211a19c-7974-4324-aecc-4a4d0fb6a310.png) |
-| Kotlin | `kt` `ktm` `kts` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718043-1058e9e3-481c-4a1f-ae34-c79b84fba38c.png) |
+| Kotlin | `kt` `ktm` `kts` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227724578-6b384641-911f-43b7-8e7b-63a2c96226a6.png) |
 | Perl | `pl` `al` `cgi` `fcgi` `perl` `ph` `plx` `pm` `pod` `psgi` `t` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718041-b6b21f17-675b-485d-92a1-76f9ec1d80a4.png) |
 | PHP | `php` `aw` `ctp` `fcgi` `inc` `php3` `php4` `php5` `phps` `phpt` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718037-2d3cbe05-e678-453e-8a22-a615794645b6.png) |
 | Python | `py` `bzl` `cgi` `fcgi` `gyp` `lmi` `pyde` `pyp` `pyt` `pyw` `rpy` `tac` `wsgi` `xpy` | kebab-case | ![](https://user-images.githubusercontent.com/54644599/227718034-fe84d827-4f53-4466-b37a-2cdd3e817ba2.png) |
@@ -63,7 +63,7 @@ yarn add codinasion/language
 | Rust | `rs` `rs.in` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718026-c1ee3b0c-1e70-4f3c-99a5-23c93ca2040e.png) |
 | Scala | `scala` `sbt` `sc` | camelCase | ![](https://user-images.githubusercontent.com/54644599/227718024-b9dae41e-16b1-4d0f-944e-5d39f894552f.png) |
 | Swift | `swift` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718021-6f0d1954-e71c-45d2-8ec3-be2b75d6adcd.png) |
-| TypeScript | `ts` `tsx` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718019-9497186d-7668-4417-a2ee-66cd49987fd1.png) |
+| TypeScript | `ts` `tsx` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227724573-d958c16a-4b78-4bc1-b05f-599167150e8a.png) |
 
 <!-- END: Available Languages -->
 

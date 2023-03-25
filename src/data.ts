@@ -86,7 +86,7 @@ const LanguageData: LanguageDataType[] = [
       'xsjslib',
     ],
     namingConvension: 'PascalCase',
-    logo: 'https://user-images.githubusercontent.com/54644599/227718046-4a1145f9-21a8-400f-bea6-150f0d99d110.png',
+    logo: 'https://user-images.githubusercontent.com/54644599/227724565-dd199753-04ef-4262-bb48-e01b187ab4df.png',
   },
   {
     name: 'Julia',
@@ -98,7 +98,7 @@ const LanguageData: LanguageDataType[] = [
     name: 'Kotlin',
     fileExtension: ['kt', 'ktm', 'kts'],
     namingConvension: 'PascalCase',
-    logo: 'https://user-images.githubusercontent.com/54644599/227718043-1058e9e3-481c-4a1f-ae34-c79b84fba38c.png',
+    logo: 'https://user-images.githubusercontent.com/54644599/227724578-6b384641-911f-43b7-8e7b-63a2c96226a6.png',
   },
   {
     name: 'Perl',
@@ -172,7 +172,7 @@ const LanguageData: LanguageDataType[] = [
     name: 'TypeScript',
     fileExtension: ['ts', 'tsx'],
     namingConvension: 'PascalCase',
-    logo: 'https://user-images.githubusercontent.com/54644599/227718019-9497186d-7668-4417-a2ee-66cd49987fd1.png',
+    logo: 'https://user-images.githubusercontent.com/54644599/227724573-d958c16a-4b78-4bc1-b05f-599167150e8a.png',
   },
 ];
 
