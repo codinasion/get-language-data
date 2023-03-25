@@ -1,14 +1,14 @@
-import Language from '../index';
+import getLanguageData from '../language';
 import LanguageData from '../data';
 
-describe('Language', () => {
+describe('Get Language Data', () => {
   // Test case for "C"
   it('should return C data based on name "C"', () => {
-    expect(Language({ name: 'C' })).toEqual(LanguageData.filter((language) => language.name === 'C'));
+    expect(getLanguageData({ name: 'C' })).toEqual(LanguageData.filter((language) => language.name === 'C'));
   });
 
   it('should return C data based on file extension "c"', () => {
-    expect(Language({ fileExtension: 'c' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'c' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('c')),
     );
   });
@@ -16,11 +16,11 @@ describe('Language', () => {
 
   // Test case for "C#"
   it('should return C# data based on name "C#"', () => {
-    expect(Language({ name: 'C#' })).toEqual(LanguageData.filter((language) => language.name === 'C#'));
+    expect(getLanguageData({ name: 'C#' })).toEqual(LanguageData.filter((language) => language.name === 'C#'));
   });
 
   it('should return C# data based on file extension "cs"', () => {
-    expect(Language({ fileExtension: 'cs' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'cs' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('cs')),
     );
   });
@@ -28,11 +28,11 @@ describe('Language', () => {
 
   // Test case for "C++"
   it('should return C++ data based on name "C++"', () => {
-    expect(Language({ name: 'C++' })).toEqual(LanguageData.filter((language) => language.name === 'C++'));
+    expect(getLanguageData({ name: 'C++' })).toEqual(LanguageData.filter((language) => language.name === 'C++'));
   });
 
   it('should return C++ data based on file extension "cpp"', () => {
-    expect(Language({ fileExtension: 'cpp' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'cpp' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('cpp')),
     );
   });
@@ -40,11 +40,11 @@ describe('Language', () => {
 
   // Test case for "Dart"
   it('should return Dart data based on name "Dart"', () => {
-    expect(Language({ name: 'Dart' })).toEqual(LanguageData.filter((language) => language.name === 'Dart'));
+    expect(getLanguageData({ name: 'Dart' })).toEqual(LanguageData.filter((language) => language.name === 'Dart'));
   });
 
   it('should return Dart data based on file extension "dart"', () => {
-    expect(Language({ fileExtension: 'dart' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'dart' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('dart')),
     );
   });
@@ -52,11 +52,11 @@ describe('Language', () => {
 
   // Test case for "F#"
   it('should return F# data based on name "F#"', () => {
-    expect(Language({ name: 'F#' })).toEqual(LanguageData.filter((language) => language.name === 'F#'));
+    expect(getLanguageData({ name: 'F#' })).toEqual(LanguageData.filter((language) => language.name === 'F#'));
   });
 
   it('should return F# data based on file extension "fs"', () => {
-    expect(Language({ fileExtension: 'fs' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'fs' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('fs')),
     );
   });
@@ -64,11 +64,11 @@ describe('Language', () => {
 
   // Test case for "GO"
   it('should return GO data based on name "GO"', () => {
-    expect(Language({ name: 'GO' })).toEqual(LanguageData.filter((language) => language.name === 'GO'));
+    expect(getLanguageData({ name: 'GO' })).toEqual(LanguageData.filter((language) => language.name === 'GO'));
   });
 
   it('should return GO data based on file extension "go"', () => {
-    expect(Language({ fileExtension: 'go' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'go' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('go')),
     );
   });
@@ -76,11 +76,13 @@ describe('Language', () => {
 
   // Test case for "Haskell"
   it('should return Haskell data based on name "Haskell"', () => {
-    expect(Language({ name: 'Haskell' })).toEqual(LanguageData.filter((language) => language.name === 'Haskell'));
+    expect(getLanguageData({ name: 'Haskell' })).toEqual(
+      LanguageData.filter((language) => language.name === 'Haskell'),
+    );
   });
 
   it('should return Haskell data based on file extension "hs"', () => {
-    expect(Language({ fileExtension: 'hs' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'hs' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('hs')),
     );
   });
@@ -88,11 +90,11 @@ describe('Language', () => {
 
   // Test case for "Java"
   it('should return Java data based on name "Java"', () => {
-    expect(Language({ name: 'Java' })).toEqual(LanguageData.filter((language) => language.name === 'Java'));
+    expect(getLanguageData({ name: 'Java' })).toEqual(LanguageData.filter((language) => language.name === 'Java'));
   });
 
   it('should return Java data based on file extension "java"', () => {
-    expect(Language({ fileExtension: 'java' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'java' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('java')),
     );
   });
@@ -100,11 +102,13 @@ describe('Language', () => {
 
   // Test case for "JavaScript"
   it('should return JavaScript data based on name "JavaScript"', () => {
-    expect(Language({ name: 'JavaScript' })).toEqual(LanguageData.filter((language) => language.name === 'JavaScript'));
+    expect(getLanguageData({ name: 'JavaScript' })).toEqual(
+      LanguageData.filter((language) => language.name === 'JavaScript'),
+    );
   });
 
   it('should return JavaScript data based on file extension "js"', () => {
-    expect(Language({ fileExtension: 'js' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'js' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('js')),
     );
   });
@@ -112,11 +116,11 @@ describe('Language', () => {
 
   // Test case for "Julia"
   it('should return Julia data based on name "Julia"', () => {
-    expect(Language({ name: 'Julia' })).toEqual(LanguageData.filter((language) => language.name === 'Julia'));
+    expect(getLanguageData({ name: 'Julia' })).toEqual(LanguageData.filter((language) => language.name === 'Julia'));
   });
 
   it('should return Julia data based on file extension "jl"', () => {
-    expect(Language({ fileExtension: 'jl' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'jl' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('jl')),
     );
   });
@@ -124,11 +128,11 @@ describe('Language', () => {
 
   // Test case for "Kotlin"
   it('should return Kotlin data based on name "Kotlin"', () => {
-    expect(Language({ name: 'Kotlin' })).toEqual(LanguageData.filter((language) => language.name === 'Kotlin'));
+    expect(getLanguageData({ name: 'Kotlin' })).toEqual(LanguageData.filter((language) => language.name === 'Kotlin'));
   });
 
   it('should return Kotlin data based on file extension "kt"', () => {
-    expect(Language({ fileExtension: 'kt' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'kt' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('kt')),
     );
   });
@@ -136,11 +140,11 @@ describe('Language', () => {
 
   // Test case for "Perl"
   it('should return Perl data based on name "Perl"', () => {
-    expect(Language({ name: 'Perl' })).toEqual(LanguageData.filter((language) => language.name === 'Perl'));
+    expect(getLanguageData({ name: 'Perl' })).toEqual(LanguageData.filter((language) => language.name === 'Perl'));
   });
 
   it('should return Perl data based on file extension "pl"', () => {
-    expect(Language({ fileExtension: 'pl' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'pl' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('pl')),
     );
   });
@@ -148,11 +152,11 @@ describe('Language', () => {
 
   // Test case for "PHP"
   it('should return PHP data based on name "PHP"', () => {
-    expect(Language({ name: 'PHP' })).toEqual(LanguageData.filter((language) => language.name === 'PHP'));
+    expect(getLanguageData({ name: 'PHP' })).toEqual(LanguageData.filter((language) => language.name === 'PHP'));
   });
 
   it('should return PHP data based on file extension "php"', () => {
-    expect(Language({ fileExtension: 'php' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'php' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('php')),
     );
   });
@@ -160,11 +164,11 @@ describe('Language', () => {
 
   // Test case for "Python"
   it('should return Python data based on name "Python"', () => {
-    expect(Language({ name: 'Python' })).toEqual(LanguageData.filter((language) => language.name === 'Python'));
+    expect(getLanguageData({ name: 'Python' })).toEqual(LanguageData.filter((language) => language.name === 'Python'));
   });
 
   it('should return Python data based on file extension "py"', () => {
-    expect(Language({ fileExtension: 'py' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'py' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('py')),
     );
   });
@@ -172,11 +176,11 @@ describe('Language', () => {
 
   // Test case for "R"
   it('should return R data based on name "R"', () => {
-    expect(Language({ name: 'R' })).toEqual(LanguageData.filter((language) => language.name === 'R'));
+    expect(getLanguageData({ name: 'R' })).toEqual(LanguageData.filter((language) => language.name === 'R'));
   });
 
   it('should return R data based on file extension "r"', () => {
-    expect(Language({ fileExtension: 'r' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'r' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('r')),
     );
   });
@@ -184,11 +188,11 @@ describe('Language', () => {
 
   // Test case for "Ruby"
   it('should return Ruby data based on name "Ruby"', () => {
-    expect(Language({ name: 'Ruby' })).toEqual(LanguageData.filter((language) => language.name === 'Ruby'));
+    expect(getLanguageData({ name: 'Ruby' })).toEqual(LanguageData.filter((language) => language.name === 'Ruby'));
   });
 
   it('should return Ruby data based on file extension "rb"', () => {
-    expect(Language({ fileExtension: 'rb' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'rb' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('rb')),
     );
   });
@@ -196,11 +200,11 @@ describe('Language', () => {
 
   // Test case for "Rust"
   it('should return Rust data based on name "Rust"', () => {
-    expect(Language({ name: 'Rust' })).toEqual(LanguageData.filter((language) => language.name === 'Rust'));
+    expect(getLanguageData({ name: 'Rust' })).toEqual(LanguageData.filter((language) => language.name === 'Rust'));
   });
 
   it('should return Rust data based on file extension "rs"', () => {
-    expect(Language({ fileExtension: 'rs' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'rs' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('rs')),
     );
   });
@@ -208,11 +212,11 @@ describe('Language', () => {
 
   // Test case for "Scala"
   it('should return Scala data based on name "Scala"', () => {
-    expect(Language({ name: 'Scala' })).toEqual(LanguageData.filter((language) => language.name === 'Scala'));
+    expect(getLanguageData({ name: 'Scala' })).toEqual(LanguageData.filter((language) => language.name === 'Scala'));
   });
 
   it('should return Scala data based on file extension "scala"', () => {
-    expect(Language({ fileExtension: 'scala' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'scala' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('scala')),
     );
   });
@@ -220,11 +224,11 @@ describe('Language', () => {
 
   // Test case for "Swift"
   it('should return Swift data based on name "Swift"', () => {
-    expect(Language({ name: 'Swift' })).toEqual(LanguageData.filter((language) => language.name === 'Swift'));
+    expect(getLanguageData({ name: 'Swift' })).toEqual(LanguageData.filter((language) => language.name === 'Swift'));
   });
 
   it('should return Swift data based on file extension "swift"', () => {
-    expect(Language({ fileExtension: 'swift' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'swift' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('swift')),
     );
   });
@@ -232,11 +236,13 @@ describe('Language', () => {
 
   // Test case for "TypeScript"
   it('should return TypeScript data based on name "TypeScript"', () => {
-    expect(Language({ name: 'TypeScript' })).toEqual(LanguageData.filter((language) => language.name === 'TypeScript'));
+    expect(getLanguageData({ name: 'TypeScript' })).toEqual(
+      LanguageData.filter((language) => language.name === 'TypeScript'),
+    );
   });
 
   it('should return TypeScript data based on file extension "ts"', () => {
-    expect(Language({ fileExtension: 'ts' })).toEqual(
+    expect(getLanguageData({ fileExtension: 'ts' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('ts')),
     );
   });

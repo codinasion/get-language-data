@@ -1,6 +1,6 @@
 {
   "name": "@codinasion/language",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": false,
   "description": "All data related to programming languages",
   "main": "lib/index.js",

@@ -1,2 +1,2 @@
-import type { LanguageDataType, InputType } from './type';
-export default function Language({ name, fileExtension }: InputType): LanguageDataType[];
+import getLanguageData from './language';
+export { getLanguageData };

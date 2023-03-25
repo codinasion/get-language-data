@@ -115,7 +115,7 @@ const LanguageData: LanguageDataType[] = [
   {
     name: 'Python',
     fileExtension: ['py', 'bzl', 'cgi', 'fcgi', 'gyp', 'lmi', 'pyde', 'pyp', 'pyt', 'pyw', 'rpy', 'tac', 'wsgi', 'xpy'],
-    namingConvension: 'kebab-case',
+    namingConvension: 'snake_case',
     logo: 'https://user-images.githubusercontent.com/54644599/227718034-fe84d827-4f53-4466-b37a-2cdd3e817ba2.png',
   },
   {
