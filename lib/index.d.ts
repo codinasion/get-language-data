@@ -1,2 +1,3 @@
-import getLanguageData from './language';
-export { getLanguageData };
+import getLanguageData from './getLanguageData';
+import renameFile from './renameFile';
+export { getLanguageData, renameFile };

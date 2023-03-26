@@ -1,7 +1,7 @@
-import LanguageData from './data';
-import type { LanguageDataType, InputType } from './type';
+import LanguageData from '../data';
+import type { LanguageDataType, GetLanguageDataInputType } from '../type';
 
-export default function getLanguageData({ name, fileExtension }: InputType): LanguageDataType[] {
+export default function getLanguageData({ name, fileExtension }: GetLanguageDataInputType): LanguageDataType[] {
   const language = LanguageData.filter((languageData) => {
     if (name) {
       return languageData.name.toLowerCase() === name.toLowerCase();

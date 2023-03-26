@@ -38,38 +38,43 @@ yarn add codinasion/language
 
 ## How to Use
 
-1. Import the `getLanguageData` function from the `@codinasion/language` package.
+### `getLanguageData`
 
-   ```js
-   import { getLanguageData } from '@codinasion/language';
-   ```
+```js
+// Import the `getLanguageData` function from the `@codinasion/language` package.
+import { getLanguageData } from '@codinasion/language';
 
-2. Call the `getLanguageData` function with the language name, or, file extension
+// Call the `getLanguageData` function with the language name, or, file extension.
+const languageData = getLanguageData({ name: 'Python' })[0];
 
-   ```js
-   const languageData = getLanguageData({ name: 'Python' })[0];
-   ```
+// Use the `languageData` object to get the language data.
+console.log(languageData.name); // Python
+console.log(languageData.fileExtension); // py
+console.log(languageData.namingConvention); // snake_case
+console.log(languageData.logo); // https://user-images.githubusercontent.com/54644599/227718034-fe84d827-4f53-4466-b37a-2cdd3e817ba2.png
+```
 
-   or,
+### `renameFile`
 
-   ```js
-   const languageData = getLanguageData({ fileExtension: 'py' })[0];
-   ```
+```js
+// Import the `renameFile` function from the `@codinasion/language` package.
+import { renameFile } from '@codinasion/language';
 
-   or,
+// Call the `renameFile` function with the file name and the language name, or, file extension.
+const sampleFileName = 'sample-file-name.py';
 
-   ```js
-   const languageData = getLanguageData({ fileExtension: '.py' })[0];
-   ```
+console.log(renameFile({ fileName: sampleFileName })); // sample_file_name.py
+```
 
-3. Use the `languageData` object to get the language data.
+> **Note:** Use `language name` with `file name` to rename file. Because multiple languages can have the same file extension.
 
-   ```js
-   console.log(languageData.name); // Python
-   console.log(languageData.fileExtension); // py
-   console.log(languageData.namingConvention); // snake_case
-   console.log(languageData.logo); // https://user-images.githubusercontent.com/54644599/227718034-fe84d827-4f53-4466-b37a-2cdd3e817ba2.png
-   ```
+```js
+import { renameFile } from '@codinasion/language';
+
+const sampleFileName = 'sample-file-name.py';
+
+console.log(renameFile({ fileName: sampleFileName, name: 'python' })); // sample_file_name.py
+```
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/codinasion/.github/master/assets/rainbow-hr.png" alt="rainbow hr" width="100%" height="70%">
@@ -86,13 +91,13 @@ yarn add codinasion/language
 | C | `c` `cats` `h` `idc` `w` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718065-9c0b7fb1-7ee4-4e27-99dd-d93bb6bde1de.png) |
 | C# | `cs` `cake` `cshtml` `csx` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718064-c9b9f17a-6f55-4955-85ba-19e2c0420751.png) |
 | C++ | `cpp` `c++` `cc` `cp` `cxx` `h` `h++` `hh` `hpp` `hxx` `inc` `inl` `ipp` `tcc` `tpp` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718062-7de51f0d-3710-4e1e-9d29-466e801c6de7.png) |
-| Dart | `dart` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718060-a2d16833-cdd3-4d39-8b29-f7e928bea5f9.png) |
+| Dart | `dart` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718060-a2d16833-cdd3-4d39-8b29-f7e928bea5f9.png) |
 | F# | `fs` `fsi` `fsx` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718057-577fec2b-5a9b-451e-a221-218319af5cc6.png) |
 | GO | `go` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718055-cc760c85-aab1-4c6c-9b6e-095fedfbb12f.png) |
 | Haskell | `hs` `hsc` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718051-caef203f-2584-479d-b0e2-47fb8e59b265.png) |
 | Java | `java` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227718049-78c3fb05-f06b-4b70-bfe5-7dc8cae5df8f.png) |
 | JavaScript | `js` `_js` `bones` `es` `es6` `frag` `gs` `jake` `jsb` `jscad` `jsfl` `jsm` `jss` `njs` `pac` `sjs` `ssjs` `sublime-build` `sublime-commands` `sublime-completions` `sublime-keymap` `sublime-macro` `sublime-menu` `sublime-mousemap` `sublime-project` `sublime-settings` `sublime-theme` `sublime-workspace` `sublime_metrics` `sublime_session` `xsjs` `xsjslib` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227724565-dd199753-04ef-4262-bb48-e01b187ab4df.png) |
-| Julia | `jl` | kebab-case | ![](https://user-images.githubusercontent.com/54644599/227718045-9211a19c-7974-4324-aecc-4a4d0fb6a310.png) |
+| Julia | `jl` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718045-9211a19c-7974-4324-aecc-4a4d0fb6a310.png) |
 | Kotlin | `kt` `ktm` `kts` | PascalCase | ![](https://user-images.githubusercontent.com/54644599/227724578-6b384641-911f-43b7-8e7b-63a2c96226a6.png) |
 | Perl | `pl` `al` `cgi` `fcgi` `perl` `ph` `plx` `pm` `pod` `psgi` `t` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718041-b6b21f17-675b-485d-92a1-76f9ec1d80a4.png) |
 | PHP | `php` `aw` `ctp` `fcgi` `inc` `php3` `php4` `php5` `phps` `phpt` | snake_case | ![](https://user-images.githubusercontent.com/54644599/227718037-2d3cbe05-e678-453e-8a22-a615794645b6.png) |

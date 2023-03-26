@@ -1,5 +1,5 @@
-import getLanguageData from '../language';
-import LanguageData from '../data';
+import getLanguageData from '../index';
+import LanguageData from '../../data';
 
 describe('Get Language Data', () => {
   // Test case for "C"
