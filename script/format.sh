@@ -1,2 +1,5 @@
 echo "Formatting Files"
-prettier --write src/*.ts src/**/*.ts
+prettier --write \
+    src/*.ts \
+    src/**/*.ts \
+    src/**/**/*.ts

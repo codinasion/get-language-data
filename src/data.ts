@@ -22,7 +22,7 @@ const LanguageData: LanguageDataType[] = [
   {
     name: 'Dart',
     fileExtension: ['dart'],
-    namingConvension: 'snake_case',
+    namingConvension: 'PascalCase',
     logo: 'https://user-images.githubusercontent.com/54644599/227718060-a2d16833-cdd3-4d39-8b29-f7e928bea5f9.png',
   },
   {
@@ -91,7 +91,7 @@ const LanguageData: LanguageDataType[] = [
   {
     name: 'Julia',
     fileExtension: ['jl'],
-    namingConvension: 'kebab-case',
+    namingConvension: 'snake_case',
     logo: 'https://user-images.githubusercontent.com/54644599/227718045-9211a19c-7974-4324-aecc-4a4d0fb6a310.png',
   },
   {
