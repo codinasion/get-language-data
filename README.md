@@ -2,7 +2,7 @@
 
 A collection of Programming Language data.
 
-[![CodeFactor](https://www.codefactor.io/repository/github/get-language-data/badge)](https://www.codefactor.io/repository/github/get-language-data) ![Code Size](https://img.shields.io/github/languages/code-size/get-language-data) ![version](https://img.shields.io/github/package-json/v/get-language-data?color=lightgreen) ![MIT](https://img.shields.io/github/license/get-language-data)
+[![CodeFactor](https://www.codefactor.io/repository/github/codinasion/get-language-data/badge)](https://www.codefactor.io/repository/github/codinasion/get-language-data) ![Code Size](https://img.shields.io/github/languages/code-size/codinasion/get-language-data) ![version](https://img.shields.io/github/package-json/v/codinasion/get-language-data?color=lightgreen) ![MIT](https://img.shields.io/github/license/codinasion/ get-language-data)
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/codinasion/.github/master/assets/rainbow-hr.png" alt="rainbow hr" width="100%" height="70%">
