@@ -1,12 +1,7 @@
 import LanguageData from '../data';
 import type { RenameFileInputType } from '../type';
 
-import {
-  FormatStringToCamelCase,
-  FormatStringToKebabCase,
-  FormatStringToPascalCase,
-  FormatStringToSnakeCase,
-} from '@codinasion/tools';
+import { FormatToCamelCase, FormatToKebabCase, FormatToPascalCase, FormatToSnakeCase } from 'codinasion-tools';
 
 export default function renameFile({ name, fileExtension, fileName = 'file-name' }: RenameFileInputType): string {
   const language = LanguageData.filter((languageData) => {
@@ -32,16 +27,16 @@ export default function renameFile({ name, fileExtension, fileName = 'file-name'
 
   switch (namingConvension) {
     case 'PascalCase':
-      fileSlug = FormatStringToPascalCase(fileSlug);
+      fileSlug = FormatToPascalCase(fileSlug);
       break;
     case 'camelCase':
-      fileSlug = FormatStringToCamelCase(fileSlug);
+      fileSlug = FormatToCamelCase(fileSlug);
       break;
     case 'snake_case':
-      fileSlug = FormatStringToSnakeCase(fileSlug);
+      fileSlug = FormatToSnakeCase(fileSlug);
       break;
     case 'kebab-case':
-      fileSlug = FormatStringToKebabCase(fileSlug);
+      fileSlug = FormatToKebabCase(fileSlug);
       break;
     default:
       break;

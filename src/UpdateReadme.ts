@@ -16,12 +16,18 @@ const startIndex = readmeText.indexOf(startTag);
 const endIndex = readmeText.indexOf(endTag);
 
 // Generate Table Text
-let tableText = '\n| Language | File Extension | Naming Convension | Logo |\n';
-tableText += '| --- | --- | --- | --- |\n';
+let tableText = '\n| Language | File Extension | Naming Convension | Tag | Logo |\n';
+tableText += '| --- | --- | --- | --- | --- |\n';
 for (const language of LanguageData) {
-  tableText += `| ${language.name} | \`${language.fileExtension.join('` `')}\` | ${language.namingConvension} | ![](${
-    language.logo
-  }) |\n`;
+  tableText += `| ${language.name} | \`${language.fileExtension.join('` `')}\` | ${language.namingConvension} | \`${
+    language.prismTag
+  }\` | ![][${language.prismTag}] |\n`;
+}
+
+tableText += '\n';
+
+for (const language of LanguageData) {
+  tableText += `[${language.prismTag}]: ${language.logo}\n`;
 }
 
 // Update readme

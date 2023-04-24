@@ -1,17 +1,17 @@
 {
-  "name": "@codinasion/language",
-  "version": "0.2.0",
+  "name": "get-language-data",
+  "version": "0.0.2",
   "private": false,
-  "description": "All data related to programming languages",
+  "description": "Get data related to programming languages",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
-  "repository": "https://github.com/codinasion/language",
-  "homepage": "https://github.com/codinasion/language",
+  "repository": "https://github.com/codinasion/get-language-data",
+  "homepage": "https://github.com/codinasion/get-language-data",
   "bugs": {
-    "url": "https://github.com/codinasion/language/issues",
+    "url": "https://github.com/codinasion/get-language-data/issues",
     "email": "codinasion@gmail.com"
   },
   "author": {
@@ -36,15 +36,17 @@
     "format": "sh script/format.sh",
     "lint": "sh script/lint.sh",
     "test": "sh script/test.sh",
-    "check": "sh script/check.sh",
+    "all": "sh script/run_all.sh",
     "update_readme": "sh script/update_readme.sh",
-    "prepublishOnly": "yarn run check",
-    "preversion": "yarn run check && yarn update_readme",
+    "prepublishOnly": "yarn run all",
+    "preversion": "yarn run all && yarn update_readme",
     "version": "git add -A src lib",
     "postversion": "git push && git push --tags"
   },
+  "dependencies": {
+    "codinasion-tools": "^0.1.1"
+  },
   "devDependencies": {
-    "@codinasion/tools": "codinasion/tools",
     "@types/jest": "^29.5.0",
     "jest": "^29.5.0",
     "prettier": "^2.8.7",

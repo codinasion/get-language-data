@@ -2,6 +2,7 @@ export type LanguageDataType = {
   name: string;
   fileExtension: string[];
   namingConvension: 'PascalCase' | 'camelCase' | 'snake_case' | 'kebab-case';
+  prismTag: string;
   logo: string;
 };
 
