@@ -50,7 +50,7 @@ const languageData = getLanguageData({ name: 'Python' })[0];
 // Use the `languageData` object to get the language data.
 console.log(languageData.name); // Python
 console.log(languageData.fileExtension[0]); // py
-console.log(languageData.namingConvension); // snake_case
+console.log(languageData.namingConvention); // snake_case
 console.log(languageData.prismTag); // python
 console.log(languageData.logo); // https://user-images.githubusercontent.com/54644599/227718034-fe84d827-4f53-4466-b37a-2cdd3e817ba2.png
 ```
@@ -87,7 +87,7 @@ console.log(renameFile({ fileName: sampleFileName, name: 'python' })); // sample
 <!-- Please do not edit it manually. -->
 <!-- START: Available Languages -->
 
-| Language | File Extension | Naming Convension | Tag | Logo |
+| Language | File Extension | Naming Convention | Tag | Logo |
 | --- | --- | --- | --- | --- |
 | C | `c` `cats` `h` `idc` `w` | PascalCase | `c` | ![][c] |
 | C# | `cs` `cake` `cshtml` `csx` | PascalCase | `csharp` | ![][csharp] |

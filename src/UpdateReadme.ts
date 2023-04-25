@@ -16,10 +16,10 @@ const startIndex = readmeText.indexOf(startTag);
 const endIndex = readmeText.indexOf(endTag);
 
 // Generate Table Text
-let tableText = '\n| Language | File Extension | Naming Convension | Tag | Logo |\n';
+let tableText = '\n| Language | File Extension | Naming Convention | Tag | Logo |\n';
 tableText += '| --- | --- | --- | --- | --- |\n';
 for (const language of LanguageData) {
-  tableText += `| ${language.name} | \`${language.fileExtension.join('` `')}\` | ${language.namingConvension} | \`${
+  tableText += `| ${language.name} | \`${language.fileExtension.join('` `')}\` | ${language.namingConvention} | \`${
     language.prismTag
   }\` | ![][${language.prismTag}] |\n`;
 }

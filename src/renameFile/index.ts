@@ -21,11 +21,11 @@ export default function renameFile({ name, fileExtension, fileName = 'file-name'
     }
   });
 
-  const namingConvension = language[0].namingConvension;
+  const namingConvention = language[0].namingConvention;
   let fileSlug = fileName.split('.')[0];
   const fileExt = fileName.split('.').pop();
 
-  switch (namingConvension) {
+  switch (namingConvention) {
     case 'PascalCase':
       fileSlug = FormatToPascalCase(fileSlug);
       break;
