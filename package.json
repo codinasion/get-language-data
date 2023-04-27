@@ -1,6 +1,6 @@
 {
   "name": "get-language-data",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": false,
   "description": "Get data related to programming languages",
   "main": "lib/index.js",
