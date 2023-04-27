@@ -12,6 +12,10 @@ describe('Get Language Data', () => {
       LanguageData.filter((language) => language.fileExtension.includes('c')),
     );
   });
+
+  it('should return C data based on prism tag "c"', () => {
+    expect(getLanguageData({ prismTag: 'c' })).toEqual(LanguageData.filter((language) => language.prismTag === 'c'));
+  });
   // Test case for "C" ends here...
 
   // Test case for "C#"
@@ -22,6 +26,12 @@ describe('Get Language Data', () => {
   it('should return C# data based on file extension "cs"', () => {
     expect(getLanguageData({ fileExtension: 'cs' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('cs')),
+    );
+  });
+
+  it('should return C# data based on prism tag "csharp"', () => {
+    expect(getLanguageData({ prismTag: 'csharp' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'csharp'),
     );
   });
   // Test case for "C#" ends here...
@@ -36,6 +46,12 @@ describe('Get Language Data', () => {
       LanguageData.filter((language) => language.fileExtension.includes('cpp')),
     );
   });
+
+  it('should return C++ data based on prism tag "cpp"', () => {
+    expect(getLanguageData({ prismTag: 'cpp' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'cpp'),
+    );
+  });
   // Test case for "C++" ends here...
 
   // Test case for "Dart"
@@ -46,6 +62,12 @@ describe('Get Language Data', () => {
   it('should return Dart data based on file extension "dart"', () => {
     expect(getLanguageData({ fileExtension: 'dart' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('dart')),
+    );
+  });
+
+  it('should return Dart data based on prism tag "dart"', () => {
+    expect(getLanguageData({ prismTag: 'dart' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'dart'),
     );
   });
   // Test case for "Dart" ends here...
@@ -60,6 +82,12 @@ describe('Get Language Data', () => {
       LanguageData.filter((language) => language.fileExtension.includes('fs')),
     );
   });
+
+  it('should return F# data based on prism tag "fsharp"', () => {
+    expect(getLanguageData({ prismTag: 'fsharp' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'fsharp'),
+    );
+  });
   // Test case for "F#" ends here...
 
   // Test case for "GO"
@@ -71,6 +99,10 @@ describe('Get Language Data', () => {
     expect(getLanguageData({ fileExtension: 'go' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('go')),
     );
+  });
+
+  it('should return GO data based on prism tag "go"', () => {
+    expect(getLanguageData({ prismTag: 'go' })).toEqual(LanguageData.filter((language) => language.prismTag === 'go'));
   });
   // Test case for "GO" ends here...
 
@@ -86,6 +118,12 @@ describe('Get Language Data', () => {
       LanguageData.filter((language) => language.fileExtension.includes('hs')),
     );
   });
+
+  it('should return Haskell data based on prism tag "haskell"', () => {
+    expect(getLanguageData({ prismTag: 'haskell' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'haskell'),
+    );
+  });
   // Test case for "Haskell" ends here...
 
   // Test case for "Java"
@@ -96,6 +134,12 @@ describe('Get Language Data', () => {
   it('should return Java data based on file extension "java"', () => {
     expect(getLanguageData({ fileExtension: 'java' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('java')),
+    );
+  });
+
+  it('should return Java data based on prism tag "java"', () => {
+    expect(getLanguageData({ prismTag: 'java' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'java'),
     );
   });
   // Test case for "Java" ends here...
@@ -112,6 +156,12 @@ describe('Get Language Data', () => {
       LanguageData.filter((language) => language.fileExtension.includes('js')),
     );
   });
+
+  it('should return JavaScript data based on prism tag "javascript"', () => {
+    expect(getLanguageData({ prismTag: 'javascript' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'javascript'),
+    );
+  });
   // Test case for "JavaScript" ends here...
 
   // Test case for "Julia"
@@ -122,6 +172,12 @@ describe('Get Language Data', () => {
   it('should return Julia data based on file extension "jl"', () => {
     expect(getLanguageData({ fileExtension: 'jl' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('jl')),
+    );
+  });
+
+  it('should return Julia data based on prism tag "julia"', () => {
+    expect(getLanguageData({ prismTag: 'julia' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'julia'),
     );
   });
   // Test case for "Julia" ends here...
@@ -136,6 +192,12 @@ describe('Get Language Data', () => {
       LanguageData.filter((language) => language.fileExtension.includes('kt')),
     );
   });
+
+  it('should return Kotlin data based on prism tag "kotlin"', () => {
+    expect(getLanguageData({ prismTag: 'kotlin' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'kotlin'),
+    );
+  });
   // Test case for "Kotlin" ends here...
 
   // Test case for "Perl"
@@ -146,6 +208,12 @@ describe('Get Language Data', () => {
   it('should return Perl data based on file extension "pl"', () => {
     expect(getLanguageData({ fileExtension: 'pl' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('pl')),
+    );
+  });
+
+  it('should return Perl data based on prism tag "perl"', () => {
+    expect(getLanguageData({ prismTag: 'perl' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'perl'),
     );
   });
   // Test case for "Perl" ends here...
@@ -160,6 +228,12 @@ describe('Get Language Data', () => {
       LanguageData.filter((language) => language.fileExtension.includes('php')),
     );
   });
+
+  it('should return PHP data based on prism tag "php"', () => {
+    expect(getLanguageData({ prismTag: 'php' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'php'),
+    );
+  });
   // Test case for "PHP" ends here...
 
   // Test case for "Python"
@@ -170,6 +244,12 @@ describe('Get Language Data', () => {
   it('should return Python data based on file extension "py"', () => {
     expect(getLanguageData({ fileExtension: 'py' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('py')),
+    );
+  });
+
+  it('should return Python data based on prism tag "python"', () => {
+    expect(getLanguageData({ prismTag: 'python' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'python'),
     );
   });
   // Test case for "Python" ends here...
@@ -184,6 +264,10 @@ describe('Get Language Data', () => {
       LanguageData.filter((language) => language.fileExtension.includes('r')),
     );
   });
+
+  it('should return R data based on prism tag "r"', () => {
+    expect(getLanguageData({ prismTag: 'r' })).toEqual(LanguageData.filter((language) => language.prismTag === 'r'));
+  });
   // Test case for "R" ends here...
 
   // Test case for "Ruby"
@@ -194,6 +278,12 @@ describe('Get Language Data', () => {
   it('should return Ruby data based on file extension "rb"', () => {
     expect(getLanguageData({ fileExtension: 'rb' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('rb')),
+    );
+  });
+
+  it('should return Ruby data based on prism tag "ruby"', () => {
+    expect(getLanguageData({ prismTag: 'ruby' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'ruby'),
     );
   });
   // Test case for "Ruby" ends here...
@@ -208,6 +298,12 @@ describe('Get Language Data', () => {
       LanguageData.filter((language) => language.fileExtension.includes('rs')),
     );
   });
+
+  it('should return Rust data based on prism tag "rust"', () => {
+    expect(getLanguageData({ prismTag: 'rust' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'rust'),
+    );
+  });
   // Test case for "Rust" ends here...
 
   // Test case for "Scala"
@@ -218,6 +314,12 @@ describe('Get Language Data', () => {
   it('should return Scala data based on file extension "scala"', () => {
     expect(getLanguageData({ fileExtension: 'scala' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('scala')),
+    );
+  });
+
+  it('should return Scala data based on prism tag "scala"', () => {
+    expect(getLanguageData({ prismTag: 'scala' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'scala'),
     );
   });
   // Test case for "Scala" ends here...
@@ -232,6 +334,12 @@ describe('Get Language Data', () => {
       LanguageData.filter((language) => language.fileExtension.includes('swift')),
     );
   });
+
+  it('should return Swift data based on prism tag "swift"', () => {
+    expect(getLanguageData({ prismTag: 'swift' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'swift'),
+    );
+  });
   // Test case for "Swift" ends here...
 
   // Test case for "TypeScript"
@@ -244,6 +352,12 @@ describe('Get Language Data', () => {
   it('should return TypeScript data based on file extension "ts"', () => {
     expect(getLanguageData({ fileExtension: 'ts' })).toEqual(
       LanguageData.filter((language) => language.fileExtension.includes('ts')),
+    );
+  });
+
+  it('should return TypeScript data based on prism tag "typescript"', () => {
+    expect(getLanguageData({ prismTag: 'typescript' })).toEqual(
+      LanguageData.filter((language) => language.prismTag === 'typescript'),
     );
   });
   // Test case for "TypeScript" ends here...

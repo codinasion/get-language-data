@@ -55,6 +55,23 @@ console.log(languageData.prismTag); // python
 console.log(languageData.logo); // https://user-images.githubusercontent.com/54644599/227718034-fe84d827-4f53-4466-b37a-2cdd3e817ba2.png
 ```
 
+```js
+// Import the `getLanguageData` function from the `get-language-data` package.
+import { getLanguageData } from 'get-language-data';
+
+// Call the `getLanguageData` function with the language name, or, file extension.
+const languageData = getLanguageData({
+  prismTag: 'csharp',
+})[0];
+
+// // Use the `languageData` object to get the language data.
+console.log(languageData.name); // C#
+console.log(languageData.fileExtension[0]); // cs
+console.log(languageData.namingConvention); // PascalCase
+console.log(languageData.prismTag); // csharp
+console.log(languageData.logo); // https://user-images.githubusercontent.com/54644599/227718064-c9b9f17a-6f55-4955-85ba-19e2c0420751.png
+```
+
 ### `renameFile`
 
 ```js

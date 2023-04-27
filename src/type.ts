@@ -9,6 +9,7 @@ export type LanguageDataType = {
 export type GetLanguageDataInputType = {
   name?: string;
   fileExtension?: string;
+  prismTag?: string;
 };
 
 export type RenameFileInputType = {
